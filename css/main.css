@@ -1,0 +1,284 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f2f2f2;
+}
+
+.yellow {
+	color: #e4bb23;
+}
+
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header {
+	background-image: url(../img/capa-madmax2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	color: #fff;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.main-header:after {
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 212, 255, 0) 75%
+	);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 13;
+	padding: 20px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+
+.header-menu {
+	list-style: none;
+	display: flex;
+}
+
+.header-menu li {
+	padding: 15px 20px;
+}
+
+.header-menu li:hover {
+	color : #e4bb23;
+}
+
+.header-profile{
+	display: flex;
+}
+
+.header-profile img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.header-profile p {
+	padding: 15px;
+}
+
+.header-content {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	z-index: 2;
+}
+
+.header-content h1 {
+	color: #fff;
+	font-size: 65px;
+	font-weight: 700;
+	line-height: 78px;
+}
+
+.header-content ul {
+	display: flex;
+	color: #fff;
+	font-size: 13px;
+	list-style: none;
+}
+
+.header-content ul li {
+	padding-right: 15px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.header-content ul li:hover {
+	color : #e4bb23;
+}
+
+.header-content button {
+	width: 195px;
+	height: 45px;
+	border-radius: 50px;
+	background-color: #e4bb23;
+	border: none;
+	margin: 30px 0px;
+	color: #000;
+}
+
+.body-nav{
+	margin-top: 20px;
+	display: flex;
+	border-bottom: 1px solid #ccc;
+	align-items: center;
+}
+
+.body-nav ul{
+	display: flex;
+	list-style: none;
+}
+
+.body-nav ul li {
+	margin-left: 30px;
+	padding-bottom: 30px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #e4bb23;
+	cursor: pointer;
+}
+
+.body-nav ul li:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+.cards ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin-left: 15px;
+}
+
+.cards ul li {
+	padding: 30px 15px 0px 0px;
+}
+
+.card {
+	width: 230px;
+	border-radius: 0px 0px 5px 5px;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px #ccc;
+}
+
+.card-header img{
+	width: 100%;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.card-header{
+	position: relative;
+}
+
+.movie-info {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	padding: 80px 20px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+.movie-info h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #e4bb23;
+}
+
+.movie-info i {
+	font-size: 50px;
+	color: #fff;
+	padding: 15px;
+}
+
+.card-header:hover .movie-info{
+	opacity: 1;
+	visibility: visible;
+}
+
+.card-body h1{
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.card-body a {
+	text-decoration: none;
+	font-size: 13px;
+	margin-left: 10px;
+	color: #e4bb23;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.card-footer p {
+	font-weight: bold;
+}
+
+.card-footer i {
+	color: #ccc;
+}
+
+.card-footer i:hover {
+	color: #f00;
+}
+
+footer {
+	background-color: #fff;
+	padding: 30px;
+	margin-top: 50px;
+}
+
+footer div{
+	max-width: 1020px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+}
+
+footer ul li {
+	font-size: 25px;
+	color: #ccc;
+	margin: 15px;
+}
+
+.fa-twitter:hover {
+	color: #55acee;
+}
+
+.fa-facebook-official:hover {
+	color:#3b5998;
+}
+
+.fa-instagram:hover {
+	color: #eda099;
+}
